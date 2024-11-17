@@ -1,0 +1,117 @@
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #faf8ef;
+}
+
+/* Game container styles */
+.game-container {
+    text-align: center;
+    max-width: 90%;
+    margin: auto;
+    position: relative;
+}
+
+/* Score container styles */
+.score-container {
+    margin-bottom: 20px;
+}
+
+.score {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Canvas styles */
+#game-board {
+    background-color: #bbada0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Countdown styles */
+.countdown {
+    font-size: 48px;
+    font-weight: bold;
+    color: #776e65;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+/* Game over styles */
+.game-over {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.game-over div {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.game-over button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    #game-board {
+        width: 300px;
+        height: 300px;
+    }
+
+    .score {
+        font-size: 18px;
+    }
+
+    .countdown {
+        font-size: 36px;
+    }
+
+    .game-over div {
+        font-size: 18px;
+    }
+
+    .game-over button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    #game-board {
+        width: 400px;
+        height: 400px;
+    }
+
+    .countdown {
+        font-size: 42px;
+    }
+}
+
+@media (min-width: 1025px) {
+    #game-board {
+        width: 500px;
+        height: 500px;
+    }
+}

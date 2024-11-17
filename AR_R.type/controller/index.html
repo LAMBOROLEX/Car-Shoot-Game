@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>R.Type Controller</title>
+    <style>
+        .control-btn {
+            width: 80px;
+            height: 80px;
+            margin: 10px;
+            font-size: 24px;
+        }
+        #controller {
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="controller">
+        <button class="control-btn" id="btn-up"
+            ontouchstart="this.pressed=true;"
+            ontouchend="this.pressed=false;">↑</button>
+        <button class="control-btn" id="btn-down"
+            ontouchstart="this.pressed=true;"
+            ontouchend="this.pressed=false;">↓</button>
+        <button class="control-btn" id="btn-fire">FIRE</button>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/controller.js"></script>
+</body>
+</html>
